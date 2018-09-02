@@ -1,5 +1,5 @@
 body {
-  font-family: Comfortaa, Roboto, sans-serif, serif !important;
+  font-family: Montserrat, Roboto, sans-serif, serif !important;
 }
 
 .bg-light {
@@ -58,6 +58,7 @@ footer ul {
 }
 
 th {
+  font-weight: 500;
   vertical-align: middle !important;
 }
 
