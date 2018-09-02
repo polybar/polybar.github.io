@@ -1,0 +1,18 @@
+.navbar {
+  height: 60px;
+}
+
+.navbar-light {
+  border-bottom: solid 1px #0002 !important;
+}
+
+.navbar-brand {
+  font-family: Megrim, sans-serif;
+  font-size: 19pt !important;
+  color: #333 !important;
+}
+
+.navbar .nav-link {
+  font-size: 11pt;
+  transition: .2s color;
+}

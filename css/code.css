@@ -1,0 +1,47 @@
+code {
+  color: #3f76a3 !important;
+  background: #eee;
+
+  font-family: Nova Mono, Iosevka, Ubuntu Mono, Monaco, Consolas, monospace !important;
+
+  padding: 1px;
+  white-space: nowrap;
+
+  transition: .3s background;
+}
+
+code a:hover {
+  background: unset;
+}
+
+code var {
+  color: #db5375;
+  font-style: normal;
+}
+
+code var.number {
+  color: #8093f1;
+}
+
+code var.string {
+  color: #688b58;
+}
+
+code var.keyword {
+  color: #de7c5a;
+}
+
+code var.type {
+  color: #3f76a3;
+}
+
+.code-block {
+  background: #f2f2f2;
+}
+
+.code-block code {
+  color: unset !important;
+  background: inherit;
+
+  padding: unset;
+}

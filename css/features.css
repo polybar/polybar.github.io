@@ -1,0 +1,64 @@
+.feature-block .col-md-4 {
+  margin-bottom: 1.75rem;
+}
+
+.feature-block a:hover {
+  background: unset;
+}
+
+.feature-icon {
+  text-shadow: 2px 2px 0px #0002;
+  transition: .3s text-shadow;
+}
+
+.feature-icon:hover {
+  text-shadow: unset;
+}
+
+.feature-block .fa-clock {
+  color: #48bf84;
+}
+
+.feature-block .fa-globe-americas {
+  color: #6a7fdb;
+}
+
+.feature-block .fa-sun {
+  color: #e89005;
+}
+
+.feature-block .fa-music {
+  color: #ed6a5a;
+}
+
+.feature-block .fa-volume-up {
+  color: #de639a;
+}
+
+.feature-block .fa-firefox {
+  color: tomato;
+}
+
+.feature-block .fa-wifi {
+  color: #5dd39e;
+}
+
+.feature-block .fa-stream {
+  color: #b48eae;
+}
+
+.feature-block .fa-window-restore {
+  color: #009fb7;
+}
+
+.feature-block .fa-project-diagram {
+  color: #4f7cac;
+}
+
+.feature-block .fa-terminal {
+  color: #b98389;
+}
+
+.feature-block .fa-ellipsis-h {
+  color: #504b43;
+}
