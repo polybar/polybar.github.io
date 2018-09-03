@@ -6,10 +6,14 @@
   border-bottom: solid 1px #0002 !important;
 }
 
+.navbar-brand-img {
+  max-width: 40px;
+}
+
 .navbar-brand {
   font-family: Flamenco, sans-serif;
   font-size: 19pt !important;
-  color: #333 !important;
+  color: #555 !important;
 }
 
 .navbar .nav-link {
