@@ -21,7 +21,6 @@ a.u:hover {
   height: 40px;
   width: 40px;
 
-  border: solid 1px #0002;
   border-radius: 50%;
 
   transition: .2s background, .2s border-color;
