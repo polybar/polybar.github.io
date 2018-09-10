@@ -32,7 +32,7 @@ a.u:hover {
 }
 
 .screenshot {
-  box-shadow: 4px 4px 0px #0002;
+  box-shadow: 3px 3px 0px #0002;
   transition: .4s box-shadow;
 }
 
