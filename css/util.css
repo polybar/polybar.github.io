@@ -9,7 +9,7 @@ a.u {
 }
 
 a.u:hover {
-  background: unset;
+  background: unset !important;
   text-decoration: underline !important;
 }
 
