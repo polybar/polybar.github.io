@@ -15,50 +15,50 @@
   text-shadow: unset;
 }
 
-.feature-block .fa-clock {
+.feature-icon.fa-clock {
   color: #48bf84;
 }
 
-.feature-block .fa-globe-americas {
+.feature-icon.fa-globe-americas {
   color: #6a7fdb;
 }
 
-.feature-block .fa-sun {
+.feature-icon.fa-sun {
   color: #e89005;
 }
 
-.feature-block .fa-volume-up {
+.feature-icon.fa-volume-up {
   color: #ed6a5a;
 }
 
-.feature-block .fa-music {
+.feature-icon.fa-music {
   color: #de639a;
 }
 
-.feature-block .fa-microchip {
+.feature-icon.fa-microchip {
   color: #e9724c;
 }
 
-.feature-block .fa-wifi {
+.feature-icon.fa-wifi {
   color: #5dd39e;
 }
 
-.feature-block .fa-stream {
+.feature-icon.fa-stream {
   color: #b48eae;
 }
 
-.feature-block .fa-window-restore {
+.feature-icon.fa-window-restore {
   color: #009fb7;
 }
 
-.feature-block .fa-project-diagram {
+.feature-icon.fa-project-diagram {
   color: #4f7cac;
 }
 
-.feature-block .fa-terminal {
+.feature-icon.fa-terminal {
   color: #b98389;
 }
 
-.feature-block .fa-ellipsis-h {
+.feature-icon.fa-ellipsis-h {
   color: #504b43;
 }
