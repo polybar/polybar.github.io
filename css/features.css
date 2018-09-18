@@ -2,10 +2,6 @@ section.features .col-md-4 {
   margin-bottom: 1.75rem;
 }
 
-.feature-block a:hover {
-  background: unset;
-}
-
 .feature-icon {
   text-shadow: 2px 2px 0px #0002;
   transition: .3s text-shadow;

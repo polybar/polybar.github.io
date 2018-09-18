@@ -56,11 +56,15 @@ a:hover {
   text-decoration: none !important;
 }
 
-main a {
-  color: #af5d63 !important;
+section.features a {
+  color: inherit;
 }
 
-main a:hover {
+section.installation a, section.configuration a {
+  color: #af5d63;
+}
+
+section.installation a:hover, section.configuration a:hover {
   background: #f5ebeb;
 }
 
