@@ -1,0 +1,45 @@
+a.b {
+  color: inherit !important;
+  font-weight: 500;
+}
+
+a.u {
+  color: inherit !important;
+  text-decoration: underline;
+}
+
+a.u:hover {
+  background: unset !important;
+  text-decoration: underline !important;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.btn-scroll-to-main {
+  height: 40px;
+  width: 40px;
+
+  border-radius: 50%;
+
+  transition: .2s background, .2s border-color;
+}
+
+.btn-scroll-to-main:hover {
+  background: #8881;
+  border-color: #8881;
+}
+
+.screenshot {
+  box-shadow: 3px 3px 0px #0002;
+  transition: .4s box-shadow;
+}
+
+.screenshot:hover {
+  box-shadow: unset;
+}
+
+.screenshot.border {
+  border: solid 1px #0005 !important;
+}

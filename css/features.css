@@ -1,0 +1,60 @@
+section.features .col-md-4 {
+  margin-bottom: 2rem;
+}
+
+.feature-icon {
+  text-shadow: 2px 2px 0px #0002;
+  transition: .3s text-shadow;
+}
+
+.feature-icon:hover {
+  text-shadow: unset;
+}
+
+.feature-icon.fa-clock {
+  color: #48bf84;
+}
+
+.feature-icon.fa-globe-americas {
+  color: #6a7fdb;
+}
+
+.feature-icon.fa-sun {
+  color: #e89005;
+}
+
+.feature-icon.fa-volume-up {
+  color: #ed6a5a;
+}
+
+.feature-icon.fa-music {
+  color: #de639a;
+}
+
+.feature-icon.fa-microchip {
+  color: #e9724c;
+}
+
+.feature-icon.fa-wifi {
+  color: #5dd39e;
+}
+
+.feature-icon.fa-stream {
+  color: #b48eae;
+}
+
+.feature-icon.fa-window-restore {
+  color: #009fb7;
+}
+
+.feature-icon.fa-project-diagram {
+  color: #4f7cac;
+}
+
+.feature-icon.fa-terminal {
+  color: #b98389;
+}
+
+.feature-icon.fa-ellipsis-h {
+  color: #504b43;
+}

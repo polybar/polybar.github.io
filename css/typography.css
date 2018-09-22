@@ -1,0 +1,56 @@
+h6 {
+  font-size: 11pt !important;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.display-3 {
+  font-family: Poiret One;
+  font-size: 7.25vh;
+}
+
+.display-4 {
+  font-family: Josefin Sans;
+  font-weight: normal !important;
+  font-size: 22pt !important;
+}
+
+.display-5 {
+  font-family: Josefin Sans;
+  font-weight: 300 !important;
+  font-size: 18pt;
+}
+
+/* sm */
+@media (max-width: 575.98px) {
+  .display-3 {
+    font-family: Josefin Sans;
+    font-size: 25pt !important;
+    font-weight: 400 !important;
+  }
+
+  .display-4 {
+    font-size: 17pt !important;
+  }
+
+  .display-5 {
+    font-size: 15pt !important;
+  }
+
+  .display-6 {
+    font-weight: 300 !important;
+  }
+}
+
+/* md */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .display-3 {
+    font-family: Josefin Sans;
+    font-size: 35pt !important;
+    font-weight: 400 !important;
+  }
+
+  .display-6 {
+    font-weight: 300 !important;
+  }
+}

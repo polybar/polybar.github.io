@@ -1,0 +1,53 @@
+.mockup {
+  font-family: Nova Mono;
+  font-size: 14px;
+
+  height: 45px;
+}
+
+.mockup.mb-5 {
+  margin-bottom: 2.5rem !important;
+}
+
+.mockup .module-block {
+  flex: 1;
+}
+
+.mockup .module-block:first-child > span {
+  margin-right: auto;
+}
+
+.mockup .module-block:last-child > span {
+  margin-left: auto;
+}
+
+.mockup.first {
+  color: white;
+  background: #6798c1;
+
+  box-shadow: 4px 4px 0px #3f76a3;
+}
+
+.mockup.second {
+  border: 1px solid #888;
+  box-shadow: 0px 3px 0px #888;
+}
+
+.mockup.second .module {
+  border-right: 1px solid #555;
+}
+
+.mockup.second .fa-power-off {
+  color: #ed474a;
+}
+
+.mockup.third {
+  color: white;
+  background: #8cba80;
+
+  box-shadow: 4px 4px 0 #0002;
+}
+
+.mockup.third .module::after {
+  content: "++";
+}
