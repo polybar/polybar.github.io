@@ -24,6 +24,13 @@ body {
   height: calc(100vh - 60px - 1px);
 }
 
+/* md + */
+@media (min-width: 768px) {
+  .hero .display-6 {
+    max-width: 75%;
+  }
+}
+
 main {
   font-size: 11pt;
 
