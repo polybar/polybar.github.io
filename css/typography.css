@@ -42,6 +42,15 @@ h6 {
   }
 }
 
+/* sm < < md */
+@media (min-width: 575.98px) and (max-width: 768px) {
+  .display-3 {
+    font-family: Josefin Sans;
+    font-size: 30pt !important;
+    font-weight: 400 !important;
+  }
+}
+
 /* md */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .display-3 {
