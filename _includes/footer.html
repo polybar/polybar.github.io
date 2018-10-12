@@ -1,0 +1,51 @@
+<footer class="text-center text-muted">
+  <div class="container">
+
+    <section class="row py-4">
+      <div class="col-6">
+        <ul class="list-unstyled mb-0">
+          {% for item in site.data.footer.left %}
+          <li>
+            <a href="{{ item.link }}">{{ item.label }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-6">
+        <ul class="list-unstyled mb-0">
+          {% for item in site.data.footer.right %}
+            <li>
+              <a href="{{ item.link }}">{{ item.label }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <section class="row border-top py-3">
+      <div class="col-md-12">
+        <div class="d-flex justify-content-between">
+          <span>
+            <a class="b" href="{{ site.data.footer.source }}">Design</a>
+            by
+            <a class="b" href="https://github.com/{{ site.data.footer.designer }}">
+              {{ site.data.footer.designer }}
+            </a>
+          </span>
+          <span>
+            Created by
+            <a class="b" href="https://github.com/{{ site.data.footer.creator }}">
+              {{ site.data.footer.creator }}
+            </a>
+          </span>
+          <span>Examples by
+            <a class="b" href="https://github.com/{{ site.data.footer.artist }}">
+              {{ site.data.footer.artist }}
+            </a>
+          </span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</footer>

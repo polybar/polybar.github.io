@@ -1,0 +1,40 @@
+- distro: Arch Linux
+  instructions: >
+    you can install the AUR package [polybar-git](https://aur.archlinux.org/packages/polybar-git/)
+    to get the latest version, or [polybar](https://aur.archlinux.org/packages/polybar/) for the latest
+    stable release
+
+- distro: Void Linux
+  instructions: >
+    can be installed using
+    <code>
+      xbps-install -S
+      <a href="https://github.com/void-linux/void-packages/blob/master/srcpkgs/polybar/template">polybar</a>
+    </code>
+
+- distro: NixOS
+  instructions: >
+    available in both the stable and unstable channels and can be installed with the command
+    `nix-env -iA nixos.polybar`
+
+- distro: Slackware
+  instructions: available in the [SlackBuilds](https://slackbuilds.org/repository/14.2/desktop/polybar/) repository
+
+- distro: openSUSE
+  instructions: >
+    available in [OBS](https://build.opensuse.org/package/show/home:sysek/polybar)
+    repository, package is available both for openSUSE Leap 15 and Tumbleweed
+
+- distro: FreeBSD
+  instructions: >
+    can be installed using
+    <code>pkg install <a href="https://svnweb.freebsd.org/ports/head/x11/polybar/">polybar</a></code>,
+    make sure you are using the `latest` package branch
+
+- distro: Gentoo
+  instructions: >
+    both release and git-master versions are available
+    in the [main](https://packages.gentoo.org/packages/x11-misc/polybar) repository
+
+- distro: Source Mage GNU/Linux
+  instructions: polybar spell is available in the `test` grimoire and can be installed via `cast polybar`
