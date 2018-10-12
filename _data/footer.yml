@@ -1,0 +1,30 @@
+creator: jaagr
+designer: TonCherAmi
+artist: rmw5601
+source: https://github.com/polybar/polybar.github.io
+
+left:
+  - label: GitHub
+    link: https://github.com/jaagr/polybar
+
+  - label: License
+    link: https://github.com/jaagr/polybar/blob/master/LICENSE
+
+  - label: Releases
+    link: https://github.com/jaagr/polybar/releases
+
+  - label: Contributors
+    link: https://github.com/jaagr/polybar/contributors
+
+right:
+  - label: Docs
+    link: https://github.com/jaagr/polybar/wiki
+
+  - label: Issues
+    link: https://github.com/jaagr/polybar/issues
+
+  - label: Support
+    link: https://github.com/jaagr/polybar/blob/master/SUPPORT.md
+
+  - label: Known Issues
+    link: https://github.com/jaagr/polybar/wiki/Known-Issues

@@ -1,0 +1,47 @@
+- label: Date and Time Display
+  icon: fas fa-clock
+  link: https://github.com/jaagr/polybar/wiki/Module:-date
+
+- label: Keyboard Layout and Indicator Status
+  icon: fas fa-globe-americas
+  link: https://github.com/jaagr/polybar/wiki/Module:-xkeyboard
+
+- label: Backlight Level Display
+  icon: fas fa-sun
+  link: https://github.com/jaagr/polybar/wiki/Module:-backlight
+
+- label: Volume Controls
+  icon: fas fa-volume-up
+  link: https://github.com/jaagr/polybar/wiki/Module:-pulseaudio
+
+- label: MPD Playback Controls and Status Display
+  icon: fas fa-music
+  link: https://github.com/jaagr/polybar/wiki/Module:-mpd
+
+- label: Network Connection Details
+  icon: fas fa-wifi
+  link: https://github.com/jaagr/polybar/wiki/Module:-network
+
+- label: User-defined Menu Tree
+  icon: fas fa-stream
+  link: https://github.com/jaagr/polybar/wiki/Module:-menu
+
+- label: Workspace Panel for bspwm and i3
+  icon: far fa-window-restore
+  link: https://github.com/jaagr/polybar/wiki/Module:-i3
+
+- label: CPU Load Indicator
+  icon: fas fa-microchip
+  link: https://github.com/jaagr/polybar/wiki/Module:-cpu
+
+- label: Inter-Process Messaging
+  icon: fas fa-project-diagram
+  link: https://github.com/jaagr/polybar/wiki/Inter-process-messaging
+
+- label: Time-based Shell Execution as well as Command Output Tailing
+  icon: fas fa-terminal
+  link: https://github.com/jaagr/polybar/wiki/Module:-script
+
+- label: And Many Others
+  icon: fas fa-ellipsis-h
+  link: https://github.com/jaagr/polybar/wiki/User-contributed-modules

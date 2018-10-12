@@ -1,589 +1,223 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Polybar - A fast and easy-to-use tool for creating status bars</title>
+---
+layout: default
+title: A fast and easy-to-use tool for creating status bars
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+links:
+  releases: https://github.com/jaagr/polybar/releases
+  compiling: https://github.com/jaagr/polybar/wiki/Compiling
+  configuration: https://github.com/jaagr/polybar/wiki/Configuration
+---
+<div class="hero text-center">
+  <div class="container">
+    <section class="row">
+      <div class="col-md-12">
+        <div class="content d-flex flex-column justify-content-between align-items-center">
 
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+          <div>
+            <!-- This div is aligned to the top by justify-between -->
+          </div>
 
-    <!-- Google Fonts -->
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Flamenco|Josefin+Sans:300,400|Nova+Mono|Poiret+One">
+          <header>
+            <h1 class="display-3 mb-sm-2 mb-lg-4">
+              A fast and easy to use tool for creating status bars
+            </h1>
+            <h6 class="display-6 mb-sm-2 mb-lg-4 mx-auto">
+              Polybar aims to help users build beautiful and highly customizable status bars for their desktop environment,
+              without the need of having a black belt in shell scripting.
+            </h6>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
-          integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-          crossorigin="anonymous">
+            {% include mockup.html
+            count='first'
+            left='<i class="fas fa-circle mr-1"></i>
+                  <i class="fas fa-circle-notch mr-1"></i>
+                  <i class="fas fa-circle-notch mr-1"></i>'
+            center='Tue Jul 10, 4:45 pm'
+            right='<i class="fas fa-volume-up mr-1"></i>
+                   <i class="fas fa-bell-slash mr-1"></i>
+                   <i class="fas fa-wifi"></i>'
+            %}
 
-    <!-- FontAwesome CSS -->
-    <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-          crossorigin="anonymous">
+            {% include mockup.html
+            count='second'
+            left='<i class="fab fa-firefox fa-sm mr-1"></i>
+                  <i class="fas fa-cog fa-sm mr-1"></i>
+                  <i class="far fa-envelope-open fa-lg"></i>'
+            center='<i class="fas fa-backward mr-1"></i>
+                    Slowdive - Don\'t Know Why
+                    <i class="fas fa-forward ml-1"></i>'
+            right='<span class="module pr-3"> 4:45 pm </span>
+                   <i class="fas fa-power-off ml-4"></i>'
+            %}
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/util.css">
-    <link rel="stylesheet" href="css/code.css">
-    <link rel="stylesheet" href="css/features.css">
-    <link rel="stylesheet" href="css/mockup.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/typography.css">
+            {% include mockup.html
+            count='third'
+            left='<span class="module"> [ <i class="fas fa-microchip mr-1"></i> 25% ] </span>
+                  <span> [ <i class="fas fa-hdd mr-1"></i> 350 GB ] </span>'
+            center='This is Polybar'
+            right='<span class="module"> [ <i class="fas fa-globe-americas"></i> En ] </span>
+                   <span> [ <i class="far fa-calendar"></i>  Tue Jul 10 ] </span>'
+            %}
+          </header>
 
-    <script src="js/scroll.js"></script>
-  </head>
+          <div id="btn-scroll-to-main"
+               class="d-flex justify-content-center align-items-center clickable mb-1">
+            <i class="fas fa-sm fa-angle-double-down"></i>
+          </div>
 
-  <body class="bg-light text-center">
-
-    <!-- Navbar -->
-
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="container">
-        <div class="d-flex flex-row align-items-center navbar-brand mx-auto">
-          <img class="navbar-brand-img mr-2" src="img/logo.svg">
-          <span>polybar</span>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/jaagr/polybar">GitHub</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/jaagr/polybar/wiki">Docs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/jaagr/polybar/issues/new/choose">Submit an Issue</a>
-            </li>
-          </ul>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- Main content -->
+
+<main class="text-center">
+  <div class="container pt-2 pb-5">
+
+    <!-- Features section -->
+
+    <section class="features row pt-5 pb-4 fa-3x">
+
+      <header class="col-md-12 mb-4">
+        <h4 class="display-4 pb-2">
+          The main purpose of Polybar is to help users create awesome status bars.
+          <br>
+          It has built-in functionality to display information about the most commonly used services.
+        </h4>
+        <h5 class="display-5">
+          Some of the features included so far:
+        </h5>
+      </header>
+
+      {% for feature in site.data.features %}
+        <div class="col-sm-6 col-md-4">
+          <a href="{{ feature.link }}">
+            <i class="{{ feature.icon }} feature-icon py-3"></i>
+          </a>
+          <a href="{{ feature.link }}">
+            <h6>
+              {{ feature.label }}
+            </h6>
+          </a>
         </div>
+      {% endfor %}
 
+    </section>
+
+    <!-- Installation section -->
+
+    <section class="installation row border-top py-5">
+
+      <header class="col-md-12 pb-3">
+        <h4 class="display-4 pb-2">
+          Where can you get it?
+        </h4>
+        <h5 class="display-5">
+          Polybar has already been packaged for the distributions listed below,
+          <br>
+          if you're unable to find yours, you will likely have to build it
+          from <a class="u" href="{{ page.links.releases }}">source</a>.
+        </h5>
+      </header>
+
+      <div class="col-md-12">
+
+        <table class="table table-hover mb-5">
+          <tbody class="border-bottom">
+            {% for row in site.data.installation %}
+              <tr>
+                <th scope="row">
+                  {{ row.distro }}
+                </th>
+                <td class="align-middle">
+                  {{ row.instructions | markdownify | remove: '<p>' | remove: '</p>' }}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+
+        <span>
+          You can find full list of dependencies
+          as well as build instructions <a href="{{ page.links.compiling }}">here</a>.
+        </span>
       </div>
-    </nav>
+    </section>
 
-    <!-- Hero -->
+    <!-- Configuration section -->
 
-    <div class="hero">
-      <div class="container">
-        <section class="row">
-          <div class="col-md-12">
-            <div class="content d-flex flex-column justify-content-between align-items-center">
+    <section class="configuration row border-top py-5">
 
-              <div>
-                <!-- This div is aligned to the top by justify-between -->
-              </div>
+      <header class="col-md-12 pb-3">
+        <h4 class="display-4">
+          Configuration
+        </h4>
+      </header>
 
-              <header>
-                <h1 class="display-3 mb-sm-2 mb-lg-4">
-                  A fast and easy to use tool for creating status bars
-                </h1>
-                <h6 class="display-6 mb-sm-2 mb-lg-4 mx-auto">
-                  Polybar aims to help users build beautiful and highly customizable status bars for their desktop environment,
-                  without the need of having a black belt in shell scripting.
-                </h6>
-
-                <!-- Mockups -->
-
-                <div class="d-none d-lg-block w-100">
-
-                  <figure class="mockup first d-flex flex-row align-items-center mb-5 px-4 py-2">
-                    <div class="module-block d-flex flex-row justify-content-center align-items-center">
-                      <span>
-                        <i class="fas fa-circle mr-1"></i>
-                        <i class="fas fa-circle-notch mr-1"></i>
-                        <i class="fas fa-circle-notch mr-1"></i>
-                      </span>
-                    </div>
-                    <div class="module-block d-flex justify-content-center align-items-center">
-                      <span>Tue Jul 10, 4:45 pm</span>
-                    </div>
-                    <div class="module-block d-flex justify-content-center align-items-center">
-                      <span>
-                        <i class="fas fa-volume-up mr-1"></i>
-                        <i class="fas fa-bell-slash mr-1"></i>
-                        <i class="fas fa-wifi"></i>
-                      </span>
-                    </div>
-                  </figure>
-
-                  <figure class="mockup second d-flex flex-row align-items-center mb-5 px-4 py-2">
-                    <div class="module-block d-flex flex-row justify-content-center align-items-center">
-                      <span>
-                        <i class="fab fa-firefox fa-sm mr-1"></i>
-                        <i class="fas fa-cog fa-sm mr-1"></i>
-                        <i class="far fa-envelope-open fa-lg"></i>
-                      </span>
-                    </div>
-                    <div class="module-block d-flex flex-row justify-content-center align-items-center">
-                      <span>
-                        <i class="fas fa-backward mr-1"></i>
-                        Slowdive - Don't Know Why
-                        <i class="fas fa-forward ml-1"></i>
-                      </span>
-                    </div>
-                    <div class="module-block d-flex flex-row justify-content-center align-items-center">
-                      <span>
-                        <span class="module pr-3">
-                          4:45 pm
-                        </span>
-                        <i class="fas fa-power-off ml-4"></i>
-                      </span>
-                    </div>
-                  </figure>
-
-                  <figure class="mockup third d-flex flex-row align-items-center px-4 py-2">
-                    <div class="module-block d-flex flex-row justify-content-center align-items-center">
-                      <span>
-                        <span class="module">
-                          [ <i class="fas fa-microchip mr-1"></i> 25% ]
-                        </span>
-                        <span>
-                          [ <i class="fas fa-hdd mr-1"></i> 350 GB ]
-                        </span>
-                      </span>
-                    </div>
-                    <div class="module-block d-flex flex-row justify-content-center align-items-center">
-                      <span>
-                        This is Polybar
-                      </span>
-                    </div>
-                    <div class="module-block d-flex flex-row justify-content-center align-items-center">
-                      <span>
-                        <span class="module">
-                          [ <i class="fas fa-globe-americas"></i> En ]
-                        </span>
-                        <span>
-                          [ <i class="far fa-calendar"></i>  Tue Jul 10 ]
-                        </span>
-                      </span>
-                    </div>
-                  </figure>
-
-                </div>
-
-                <!-- End mockups -->
-
-              </header>
-
-              <div id="btn-scroll-to-main"
-                   class="d-flex justify-content-center align-items-center clickable mb-1">
-                <i class="fas fa-sm fa-angle-double-down"></i>
-              </div>
-
-            </div>
-          </div>
-        </section>
+      <div class="col-md-5 ml-auto text-md-right">
+        <p>
+          Polybar's powerful yet simple DSL allows for extensive customization
+          while remaining
+          <br>
+          relatively easy to write and understand.
+          <br>
+          Here is an example of a basic date/time module that will display current date and time
+          in <code>1970-01-01 - 00:00</code> format, with an update interval of one second.
+        </p>
       </div>
-    </div>
 
-    <!-- Main content -->
+      <div class="col-md-5 mr-auto text-start">
+        <div class="code-block text-left px-2 py-1">
 
-    <main>
-      <div class="container pt-2 pb-5">
-
-        <!-- Features section -->
-
-        <section class="features row pt-5 pb-4 fa-3x">
-
-          <header class="col-md-12 mb-4">
-            <h4 class="display-4 pb-2">
-              The main purpose of Polybar is to help users create awesome status bars.
-              <br>
-              It has built-in functionality to display information about the most commonly used services.
-            </h4>
-            <h5 class="display-5">
-              Some of the features included so far:
-            </h5>
-          </header>
-
-          <!-- Features -->
-
-          <div class="col-sm-6 col-md-4">
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-date">
-              <i class="feature-icon fas fa-clock py-3"></i>
-            </a>
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-date">
-              <h6>
-                Date and Time Display
-              </h6>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-xkeyboard">
-              <i class="feature-icon fas fa-globe-americas py-3"></i>
-            </a>
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-xkeyboard">
-              <h6>
-                Keyboard Layout and Indicator Status
-              </h6>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-backlight">
-              <i class="feature-icon fas fa-sun py-3"></i>
-            </a>
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-backlight">
-              <h6>
-                Backlight Level Display
-              </h6>
-            </a>
-          </div>
-
-          <div class="col-sm-6 col-md-4">
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-pulseaudio">
-              <i class="feature-icon fas fa-volume-up py-3"></i>
-            </a>
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-pulseaudio">
-              <h6>
-                Volume Controls
-              </h6>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-mpd">
-              <i class="feature-icon fas fa-music py-3"></i>
-            </a>
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-mpd">
-              <h6>
-                MPD Playback Controls and Status Display
-              </h6>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-network">
-              <i class="feature-icon fas fa-wifi py-3"></i>
-            </a>
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-network">
-              <h6>
-                Network Connection Details
-              </h6>
-            </a>
-          </div>
-
-          <div class="col-sm-6 col-md-4">
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-menu">
-              <i class="feature-icon fas fa-stream py-3"></i>
-            </a>
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-menu">
-              <h6>
-                User-defined Menu Tree
-              </h6>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-i3">
-              <i class="feature-icon far fa-window-restore py-3"></i>
-            </a>
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-i3">
-              <h6>
-                Workspace Panel for bspwm and i3
-              </h6>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-cpu">
-              <i class="feature-icon fas fa-microchip py-3"></i>
-            </a>
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-cpu">
-              <h6>
-                CPU Load Indicator
-              </h6>
-            </a>
-          </div>
-
-          <div class="col-sm-6 col-md-4">
-            <a href="https://github.com/jaagr/polybar/wiki/Inter-process-messaging">
-              <i class="feature-icon fas fa-project-diagram py-3"></i>
-            </a>
-            <a href="https://github.com/jaagr/polybar/wiki/Inter-process-messaging">
-              <h6>
-                Inter-Process Messaging
-              </h6>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-script">
-              <i class="feature-icon fas fa-terminal py-3"></i>
-            </a>
-            <a href="https://github.com/jaagr/polybar/wiki/Module:-script">
-              <h6>
-                Time-based Shell Execution as well as Command Output Tailing
-              </h6>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <a href="https://github.com/jaagr/polybar/wiki/User-contributed-modules">
-              <i class="feature-icon fas fa-ellipsis-h py-3"></i>
-            </a>
-            <a href="https://github.com/jaagr/polybar/wiki/User-contributed-modules">
-              <h6>
-                And Many Others
-              </h6>
-            </a>
-          </div>
-
-          <!-- End features -->
-
-        </section>
-
-        <!-- Installation section -->
-
-        <section class="installation row border-top py-5">
-
-          <header class="col-md-12 pb-3">
-            <h4 class="display-4 pb-2">
-              Where can you get it?
-            </h4>
-            <h5 class="display-5">
-              Polybar has already been packaged for the distributions listed below,
-              <br>
-              if you're unable to find yours, you will likely have to build it
-              from <a class="u" href="https://github.com/jaagr/polybar/releases">source</a>.
-            </h5>
-          </header>
-
-          <div class="col-md-12">
-
-            <!-- 'Distro - instructions' table -->
-
-            <table class="table table-hover">
-              <tbody class="border-bottom">
-                <tr>
-                  <th scope="row">
-                    Arch Linux
-                  </th>
-                  <td>
-                    you can install
-                    the AUR package <a href="https://aur.archlinux.org/packages/polybar-git/">polybar-git</a>
-                    to get the latest version, or <a href="https://aur.archlinux.org/packages/polybar/">polybar</a>
-                    for the latest stable release
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    Void Linux
-                  </th>
-                  <td>
-                    can be installed using
-                    <code>xbps-install -S
-                      <a href="https://github.com/void-linux/void-packages/blob/master/srcpkgs/polybar/template">
-                        polybar
-                      </a>
-                    </code>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    NixOS
-                  </th>
-                  <td>
-                    available in both the stable and unstable channels and
-                    can be installed with the command
-                    <br>
-                    <code>nix-env -iA nixos.polybar</code>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    Slackware
-                  </th>
-                  <td>
-                    available in the <a href="https://slackbuilds.org/repository/14.2/desktop/polybar/">SlackBuilds</a> repository
-                  </td>
-                </tr>
-
-                <tr>
-                  <th scope="row">
-                    openSUSE
-                  </th>
-                  <td>
-                    available in <a href="https://build.opensuse.org/package/show/home:sysek/polybar">OBS</a>
-                    repository, package is available both
-                    for openSUSE Leap 15 and Tumbleweed
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    FreeBSD
-                  </th>
-                  <td>
-                    can be installed using
-                    <code>pkg install <a href="https://svnweb.freebsd.org/ports/head/x11/polybar/">polybar</a></code>,
-                    make sure you are using the <code>latest</code> package branch
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    Gentoo
-                  </th>
-                  <td>
-                    both release and git-master versions are available
-                    in the <a href="https://packages.gentoo.org/packages/x11-misc/polybar">main</a>
-                    repository
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    Source Mage GNU/Linux
-                  </th>
-                  <td>
-                    polybar spell is available in the <code>test</code> grimoire and can be installed via <code>cast polybar</code>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- End 'distro - instructions' table -->
-
-          </div>
-
-          <div class="col-md-12 pt-4">
-            <span>
-              You can find full list of dependencies
-              as well as build instructions <a href="https://github.com/jaagr/polybar/wiki/Compiling">here</a>.
-            </span>
-          </div>
-        </section>
-
-        <!-- Configuration section -->
-
-        <section class="configuration row border-top py-5">
-
-          <header class="col-md-12 pb-3">
-            <h4 class="display-4">
-              Configuration
-            </h4>
-          </header>
-
-          <div class="col-md-5 ml-auto text-md-right">
-            <p>
-              Polybar's powerful yet simple DSL allows for extensive customization
-              while remaining
-              <br>
-              relatively easy to write and understand.
-              <br>
-              Here is an example of a basic date/time module that will display current date and time
-              in <code>1970-01-01 - 00:00</code> format, with an update interval of one second.
-            </p>
-          </div>
-
-          <div class="col-md-5 mr-auto text-start">
-            <div class="code-block text-left px-2 py-1">
-              <code>
+          <code>
                 [<var class="keyword">module</var>/<var class="keyword">datetime</var>]<br>
-                <var>type</var> = <var class="type">internal/date</var><br>
-                <var>interval</var> = <var class="number">1.0</var><br>
-                <br>
-                <var>date</var> = <var class="string">"%Y-%m-%d%"</var><br>
-                <var>time</var> = <var class="string">"%H:%M"</var><br>
-                <br>
-                <var>label</var> = <var class="string">"%date% - %time%"</var><br>
-              </code>
-            </div>
-          </div>
-
-          <div class="col-md-12 pt-5">
-            <span>
-              To learn more about configuring Polybar, take a look at
-              <a href="https://github.com/jaagr/polybar/wiki/Configuration">
-                our wiki.
-              </a>
-            </span>
-          </div>
-
-        </section>
-
-        <!-- Examples section -->
-
-        <section class="row border-top py-5">
-
-          <header class="col-md-12">
-            <h4 class="display-4">
-              Examples
-            </h4>
-            <h5 class="display-5 pb-4">
-              These screenshots showcase a few of the countless ways Polybar can be set up in.
-            </h5>
-          </header>
-
-          <div class="col-md-12">
-            <a href="https://www.reddit.com/r/unixporn/comments/8tgasq/i3_islands/">
-              <img class="screenshot img-fluid border mb-5" src="img/example-1.png" alt="Example One">
-            </a>
-            <a href="https://www.reddit.com/r/unixporn/comments/8ilezg/i3/">
-              <img class="screenshot img-fluid mb-5" src="img/example-2.png" alt="Example Two">
-            </a>
-            <a href="https://www.reddit.com/r/unixporn/comments/7wyzl1/i3_something_different/">
-              <img class="screenshot img-fluid" src="img/example-3.png" alt="Example Three">
-            </a>
-          </div>
-
-        </section>
-
+            <var>type</var> = <var class="type">internal/date</var><br>
+            <var>interval</var> = <var class="number">1.0</var><br>
+            <br>
+            <var>date</var> = <var class="string">"%Y-%m-%d%"</var><br>
+            <var>time</var> = <var class="string">"%H:%M"</var><br>
+            <br>
+            <var>label</var> = <var class="string">"%date% - %time%"</var><br>
+          </code>
+        </div>
       </div>
-    </main>
 
-    <!-- Footer -->
-
-    <footer class="text-muted">
-      <div class="container">
-
-        <section class="row py-4">
-          <div class="col-md-6">
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="https://github.com/jaagr/polybar">GitHub</a>
-              </li>
-              <li>
-                <a href="https://github.com/jaagr/polybar/blob/master/LICENSE">License</a>
-              </li>
-              <li>
-                <a href="https://github.com/jaagr/polybar/releases">Releases</a>
-              </li>
-              <li>
-                <a href="https://github.com/jaagr/polybar/contributors">Contributors</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="https://github.com/jaagr/polybar/wiki">Docs</a>
-              </li>
-              <li>
-                <a href="https://github.com/jaagr/polybar/issues">Issues</a>
-              </li>
-              <li>
-                <a href="https://github.com/jaagr/polybar/blob/master/SUPPORT.md">Support</a>
-              </li>
-              <li>
-                <a href="https://github.com/jaagr/polybar/wiki/Known-Issues">Known Problems</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="row border-top py-3">
-          <div class="col-md-12 mx-auto">
-            <div class="d-flex justify-content-between">
-              <span>
-                <a class="b" href="https://github.com/polybar/polybar.github.io">Design</a>
-                by
-                <a class="b" href="https://github.com/TonCherAmi">TonCherAmi</a>
-              </span>
-              <span>
-                Created by
-                <a class="b" href="https://github.com/jaagr">jaagr</a>
-              </span>
-              <span>Examples by
-                <a class="b" href="https://github.com/rmw5601">rmw5601</a>
-              </span>
-            </div>
-          </div>
-        </section>
-
+      <div class="col-md-12 pt-5">
+        <span>
+          To learn more about configuring Polybar, take a look at
+          <a href="{{ page.links.configuration }}">
+            our wiki.
+          </a>
+        </span>
       </div>
-    </footer>
-  </body>
-</html>
+
+    </section>
+
+    <!-- Examples section -->
+
+    <section class="row border-top py-5">
+
+      <header class="col-md-12">
+        <h4 class="display-4">
+          Examples
+        </h4>
+        <h5 class="display-5 pb-4">
+          These screenshots showcase a few of the countless ways Polybar can be set up in.
+        </h5>
+      </header>
+
+      <div class="col-md-12">
+        {% for example in site.data.examples %}
+          <a href="{{ example.link }}">
+            <img class="screenshot img-fluid border {% if forloop.last == false %} mb-5 {% endif %}"
+                 src="{{ example.src }}"
+                 alt="{{ example.alt }}">
+          </a>
+        {% endfor %}
+      </div>
+
+    </section>
+
+  </div>
+</main>

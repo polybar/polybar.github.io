@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Polybar - {{ page.title }}</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Flamenco|Josefin+Sans:300,400|Nova+Mono|Poiret+One">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+          integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+          crossorigin="anonymous">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/util.css">
+    <link rel="stylesheet" href="/css/code.css">
+    <link rel="stylesheet" href="/css/features.css">
+    <link rel="stylesheet" href="/css/mockup.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/typography.css">
+
+    <script src="/js/scroll.js"></script>
+  </head>
+
+  <body class="bg-light">
+
+    {% include navbar.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </body>
+</html>
