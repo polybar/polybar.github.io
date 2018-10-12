@@ -211,7 +211,7 @@ links:
         {% for example in site.data.examples %}
           <a href="{{ example.link }}">
             <img class="screenshot img-fluid border {% if forloop.last == false %} mb-5 {% endif %}"
-                 src="{{ example.src }}"
+                 src="{{ example.src | relative_url }}"
                  alt="{{ example.alt }}">
           </a>
         {% endfor %}
