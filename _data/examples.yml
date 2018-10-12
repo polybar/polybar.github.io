@@ -1,11 +1,11 @@
-- src: /img/example-1.png
+- src: /assets/img/example-1.png
   alt: Example One
   link: https://www.reddit.com/r/unixporn/comments/8tgasq/i3_islands/
 
-- src: /img/example-2.png
+- src: /assets/img/example-2.png
   alt: Example Two
   link: https://www.reddit.com/r/unixporn/comments/8ilezg/i3/
 
-- src: /img/example-3.png
+- src: /assets/img/example-3.png
   alt: Example Three
   link: https://www.reddit.com/r/unixporn/comments/7wyzl1/i3_something_different/
