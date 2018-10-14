@@ -11,7 +11,8 @@ body {
   color: #878 !important;
 }
 
-.hero {
+.hero, main, footer {
+  border-top: 1px solid #0003;
   transition: .5s box-shadow;
 }
 
@@ -33,11 +34,6 @@ body {
 
 main {
   font-size: 11pt;
-
-  border-top: 1px solid #0003;
-  border-bottom: 1px solid #0003;
-
-  transition: .5s box-shadow;
 }
 
 main:hover {
@@ -47,7 +43,6 @@ main:hover {
 
 footer {
   font-size: 10pt;
-  transition: .5s box-shadow;
 }
 
 footer:hover {
