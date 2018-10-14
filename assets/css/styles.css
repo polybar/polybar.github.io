@@ -45,7 +45,7 @@ main {
   flex: 1;
 }
 
-main:hover {
+.hero + main:hover {
   box-shadow: 0px -1px 20px rgba(0,0,0,.065),
               0px 1px 20px rgba(0,0,0,.065);
 }
