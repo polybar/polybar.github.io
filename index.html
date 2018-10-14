@@ -210,7 +210,7 @@ links:
       <div class="col-md-12">
         {% for example in site.data.examples %}
           <a href="{{ example.link }}">
-            <img class="screenshot img-fluid border {% if forloop.last == false %} mb-5 {% endif %}"
+            <img class="screenshot img-fluid border {% unless forloop.last %} mb-5 {% endunless %}"
                  src="{{ example.src | relative_url }}"
                  alt="{{ example.alt }}">
           </a>
