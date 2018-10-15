@@ -8,6 +8,7 @@ body {
   min-height: 100%;
 
   font-family: Montserrat, Roboto, sans-serif, serif !important;
+  font-size: 11pt;
 }
 
 .bg-light {
@@ -35,13 +36,12 @@ body {
 
 /* md + */
 @media (min-width: 768px) {
-  .hero .display-6 {
+  .hero .subheading {
     max-width: 75%;
   }
 }
 
 main {
-  font-size: 11pt;
   flex: 1;
 }
 
@@ -77,6 +77,10 @@ section.installation a, section.configuration a {
 
 section.installation a:hover, section.configuration a:hover {
   background: #f5ebeb;
+}
+
+section.configuration p {
+  line-height: 1.75rem;
 }
 
 footer a {
