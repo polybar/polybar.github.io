@@ -2,9 +2,6 @@ code {
   color: #3f76a3 !important;
   background: #eee;
 
-  font-family: Ubuntu Mono, Iosevka, Monaco, Consolas, monospace !important;
-  font-size: inherit;
-
   padding: 2px;
 
   transition: .3s background;
