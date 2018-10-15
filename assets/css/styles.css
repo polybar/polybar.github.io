@@ -6,9 +6,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-
-  font-family: Montserrat, Roboto, sans-serif, serif !important;
-  font-size: 11pt;
 }
 
 .bg-light {
