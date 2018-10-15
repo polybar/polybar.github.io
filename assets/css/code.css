@@ -10,6 +10,23 @@ code {
   transition: .3s background;
 }
 
+div.highlighter-rouge {
+  background: #f3f3f3;
+
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  white-space: pre-wrap;
+}
+
+div.highlighter-rouge pre.highlight {
+  margin-bottom: unset;
+}
+
+pre.highlight code {
+  background: unset;
+  padding: unset;
+}
+
 code a:hover {
   background: unset;
 }
