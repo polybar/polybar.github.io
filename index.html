@@ -18,13 +18,13 @@ links:
           </div>
 
           <header>
-            <h1 class="display-3 mb-sm-2 mb-lg-4">
+            <h1 class="display-1 mb-sm-2 mb-lg-4">
               A fast and easy to use tool for creating status bars
             </h1>
-            <h6 class="display-6 mb-sm-2 mb-lg-4 mx-auto">
+            <p class="subheading mx-auto mb-lg-4">
               Polybar aims to help users build beautiful and highly customizable status bars for their desktop environment,
               without the need of having a black belt in shell scripting.
-            </h6>
+            </p>
 
             {% include mockup.html
             count='first'
@@ -77,28 +77,27 @@ links:
 
     <!-- Features section -->
 
-    <section class="features row pt-5 pb-4 fa-3x">
+    <section class="features row pt-5 pb-4">
 
       <header class="col-md-12 mb-4">
-        <h4 class="display-4 pb-2">
+        <h3 class="pb-2">
           The main purpose of Polybar is to help users create awesome status bars.
           <br>
           It has built-in functionality to display information about the most commonly used services.
-        </h4>
-        <h5 class="display-5">
+        </h3>
+        <h4>
           Some of the features included so far:
-        </h5>
+        </h4>
       </header>
 
       {% for feature in site.data.features %}
         <div class="col-sm-6 col-md-4">
           <a href="{{ feature.link }}">
-            <i class="{{ feature.icon }} feature-icon py-3"></i>
+            <i class="{{ feature.icon }} feature-icon fa-3x my-3"></i>
           </a>
+          <br>
           <a href="{{ feature.link }}">
-            <h6>
-              {{ feature.label }}
-            </h6>
+            {{ feature.label }}
           </a>
         </div>
       {% endfor %}
@@ -110,15 +109,15 @@ links:
     <section class="installation row border-top py-5">
 
       <header class="col-md-12 pb-3">
-        <h4 class="display-4 pb-2">
+        <h3>
           Where can you get it?
-        </h4>
-        <h5 class="display-5">
+        </h3>
+        <h4>
           Polybar has already been packaged for the distributions listed below,
           <br>
           if you're unable to find yours, you will likely have to build it
           from <a class="u" href="{{ page.links.releases }}">source</a>.
-        </h5>
+        </h4>
       </header>
 
       <div class="col-md-12">
@@ -149,10 +148,10 @@ links:
 
     <section class="configuration row border-top py-5">
 
-      <header class="col-md-12 pb-3">
-        <h4 class="display-4">
+      <header class="col-md-12 mb-2">
+        <h3>
           Configuration
-        </h4>
+        </h3>
       </header>
 
       <div class="col-md-5 ml-auto text-md-right">
@@ -198,13 +197,13 @@ links:
 
     <section class="row border-top py-5">
 
-      <header class="col-md-12">
-        <h4 class="display-4">
+      <header class="col-md-12 mb-4">
+        <h3>
           Examples
-        </h4>
-        <h5 class="display-5 pb-4">
+        </h3>
+        <h4>
           These screenshots showcase a few of the countless ways Polybar can be set up in.
-        </h5>
+        </h4>
       </header>
 
       <div class="col-md-12">
