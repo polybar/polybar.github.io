@@ -3,9 +3,9 @@ code {
   background: #eee;
 
   font-family: Ubuntu Mono, Iosevka, Monaco, Consolas, monospace !important;
+  font-size: inherit;
 
-  padding: 1px;
-  white-space: nowrap;
+  padding: 2px;
 
   transition: .3s background;
 }
@@ -28,7 +28,7 @@ pre.highlight code {
 }
 
 code a:hover {
-  background: unset;
+  background: unset !important;
 }
 
 code var {
