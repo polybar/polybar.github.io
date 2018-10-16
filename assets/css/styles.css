@@ -12,6 +12,14 @@ body {
   background: #f9f9f9 !important;
 }
 
+.bg-dark {
+  background: #282828 !important;
+}
+
+.text-light {
+  color: #f2f2f2 !important;
+}
+
 .text-dark {
   color: #444 !important;
 }
@@ -20,9 +28,22 @@ body {
   color: #7c7c7c !important;
 }
 
+.navbar + header {
+  padding: 2.5rem 0rem;
+  min-height: 15rem;
+}
+
+.navbar + header h1 {
+  font-weight: 300;
+}
+
 .hero, main, footer {
   border-top: 1px solid #0003;
   transition: .5s box-shadow;
+}
+
+header + main {
+  border-top: unset;
 }
 
 .hero:hover {

@@ -1,0 +1,51 @@
+---
+layout: default
+title: Blog
+---
+<header class="d-flex bg-dark text-light">
+  <h1 class="m-auto">Polybar Blog</h1>
+</header>
+<main class="blog d-flex flex-column">
+  <div class="container d-flex flex-grow-1">
+    <div class="row flex-grow-1 pt-5 pb-4">
+      {% if site.posts.size > 0 %}
+      <div class="overview col-lg-9 mx-auto">
+        {% for post in paginator.posts %}
+          <div class="item">
+            <h3 class="mb-1 px-2">
+              <a class="border-bottom-0" href="{{ post.url | relative_url }}">
+                {{ post.title }}
+              </a>
+            </h3>
+            <p class="excerpt border-top border-bottom mb-1 p-3">
+              {{ post.excerpt | strip_html }}
+            </p>
+            <div class="d-flex text-muted px-2">
+              <small>
+                {{ post.date | date_to_string }}
+                by
+                <a class="border-bottom-0"
+                   href="https://github.com/{% if post.account %}{{ post.account }}{% else %}{{ post.author }}{% endif %}">
+                  {{ post.author }}
+                </a>
+              </small>
+              <small class="ml-auto">
+                <a href="{{ post.url | relative_url }}">
+                  Read Further
+                </a>
+              </small>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="col-md-12 my-auto text-center">
+        <i class="fas fa-ban fa-3x mb-3"></i>
+        <p>No Posts as of Yet</p>
+      </div>
+      {% endif %}
+
+      {% include paginator.html %}
+    </div>
+  </div>
+</main>

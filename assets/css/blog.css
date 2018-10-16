@@ -1,0 +1,110 @@
+/* overview */
+
+.blog .overview .item {
+  margin-bottom: 2.35rem;
+}
+
+.blog .overview .excerpt {
+  background: linear-gradient(to right, #f9f9f9, #f4f4f4);
+}
+
+.blog .overview .excerpt.border-top,
+.blog .overview .excerpt.border-bottom {
+  border-color: #0003 !important;
+}
+
+.blog .overview a,
+.blog .post a {
+  color: inherit;
+  border-bottom: 1px solid #0005;
+
+  transition: .2s border-color;
+}
+
+.blog .overview a:hover,
+.blog .post a:hover {
+  border-color: #0000 !important;
+}
+
+/* post */
+
+.navbar + header .author {
+  padding: 2px 6px;
+  color: #cee397aa;
+
+  transition: .2s border-color;
+}
+
+.navbar + header .author.border {
+  border-color: #cee39777 !important;
+}
+
+.navbar + header .author.border:hover {
+  border-left-color: #0000 !important;
+  border-right-color: #0000 !important;
+}
+
+.blog .post p,
+.blog .post li {
+  line-height: 1.75rem;
+}
+
+.blog .post strong {
+  font-weight: 600;
+}
+
+.blog .post blockquote {
+  color: #666;
+  background: #f3f3f3;
+
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+
+  border-left: 2px solid #777;
+}
+
+.blog .post blockquote > :last-child {
+  margin-bottom: unset;
+}
+
+.blog .post blockquote code {
+  background: unset;
+  padding: unset;
+}
+
+.blog .post blockquote div.highlighter-rouge {
+  border: 1px solid #0005;
+}
+
+.blog .post img {
+  display: block;
+
+  max-width: 100%;
+  margin: 2rem auto;
+
+  box-shadow: 0 2px 15px rgba(0,0,0,.20);
+}
+
+.blog .post a.footnote,
+.blog .post a.reversefootnote {
+  border-bottom: unset;
+}
+
+.blog .post + .latest ul {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+
+.blog .post + .latest a {
+  font-weight: 500;
+  color: inherit;
+
+  padding: 2px;
+
+  transition: .2s background;
+}
+
+.blog .post + .latest a:hover {
+  background: #f2f2f2;
+}

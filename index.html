@@ -42,9 +42,9 @@ links:
             left='<i class="fab fa-firefox fa-sm mr-1"></i>
                   <i class="fas fa-cog fa-sm mr-1"></i>
                   <i class="far fa-envelope-open fa-lg"></i>'
-            center='<i class="fas fa-backward mr-1"></i>
-                    Slowdive - Don\'t Know Why
-                    <i class="fas fa-forward ml-1"></i>'
+            center='<i class="fas fa-backward fa-sm mr-1"></i>
+                    Sigur Rós - Varúð
+                    <i class="fas fa-forward fa-sm ml-1"></i>'
             right='<span class="module pr-3"> 4:45 pm </span>
                    <i class="fas fa-power-off ml-4"></i>'
             %}
@@ -72,7 +72,7 @@ links:
 
 <!-- Main content -->
 
-<main class="text-center">
+<main class="home text-center">
   <div class="container pt-2 pb-5">
 
     <!-- Features section -->
@@ -209,7 +209,7 @@ links:
       <div class="col-md-12">
         {% for example in site.data.examples %}
           <a href="{{ example.link }}">
-            <img class="screenshot img-fluid border {% unless forloop.last %} mb-5 {% endunless %}"
+            <img class="screenshot img-fluid {% unless forloop.last %} mb-5 {% endunless %}"
                  src="{{ example.src | relative_url }}"
                  alt="{{ example.alt }}">
           </a>
