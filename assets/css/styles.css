@@ -9,12 +9,15 @@ body {
 }
 
 .bg-light {
-  color: #555 !important;
   background: #f9f9f9 !important;
 }
 
+.text-dark {
+  color: #444 !important;
+}
+
 .text-muted {
-  color: #878 !important;
+  color: #7c7c7c !important;
 }
 
 .hero, main, footer {
