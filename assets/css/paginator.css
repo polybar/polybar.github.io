@@ -1,0 +1,26 @@
+.page-item .page-link,
+.page-item.active .page-link,
+.page-item.disabled .page-link {
+  color: unset;
+  border: unset;
+  background: unset;
+
+  transition: .2s border-color;
+}
+
+.page-item .page-link:focus {
+  box-shadow: unset;
+}
+
+.page-item .page-link.num {
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.page-item.active .page-link.num,
+.page-item .page-link.num:hover {
+  border-color: #777;
+}
+
+.page-item.disabled .page-link {
+  color: #999;
+}

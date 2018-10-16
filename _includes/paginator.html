@@ -1,0 +1,30 @@
+{% if paginator.total_pages > 1 %}
+  <div class="col-md-12 mt-auto">
+    <nav aria-label="Page Navigation">
+      <ul class="pagination justify-content-center">
+        <li class="page-item {% unless paginator.previous_page %} disabled {% endunless %}">
+          <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">
+            <i class="fas fa-angle-left"></i>
+          </a>
+        </li>
+        {% for page in (1..paginator.total_pages) %}
+          <li class="page-item {% if page == paginator.page %} active {% endif %}">
+            <a class="page-link num"
+               href="{% if page == 1 %}
+                      {{ site.paginate_path | relative_url | replace: ':num/', '' }}
+                     {% else %}
+                      {{ site.paginate_path | relative_url | replace: ':num', page }}
+                     {% endif %}">
+              {{ page }}
+            </a>
+          </li>
+        {% endfor %}
+        <li class="page-item {% unless paginator.next_page %} disabled {% endunless %}">
+          <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">
+            <i class="fas fa-angle-right"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+{% endif %}

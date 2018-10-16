@@ -32,14 +32,5 @@ a.u:hover {
 }
 
 .screenshot {
-  box-shadow: 3px 3px 0px #0002;
-  transition: .4s box-shadow;
-}
-
-.screenshot:hover {
-  box-shadow: unset;
-}
-
-.screenshot.border {
-  border: solid 1px #0005 !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,.35);
 }

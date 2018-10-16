@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<header class="d-flex bg-dark text-light">
+  <div class="container my-auto">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 class="mb-2">{{ page.title }}</h1>
+        <span class="text-muted">
+          {{ page.date | date_to_string }}
+          --
+          <a class="author border"
+             href="https://github.com/{% if page.account %}{{ page.account }}{% else %}{{ page.author }}{% endif %}">
+            {{ page.author }}
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="blog d-flex flex-column">
+  <div class="container d-flex flex-grow-1">
+    <div class="row flex-grow-1">
+      <article class="post col-lg-9 mx-auto py-4">
+        {{ content }}
+      </article>
+      {% if site.posts.size > 1 %}
+        <div class="latest col-md-11 border-top mx-auto mt-auto py-4">
+          <h3 class="mb-3">Latest Posts</h3>
+          <ul>
+            {% for post in site.posts limit: 5 %}
+              <li class="mb-2">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</main>

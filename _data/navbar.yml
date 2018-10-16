@@ -1,5 +1,7 @@
-- label: GitHub
-  link: https://github.com/jaagr/polybar
+# xs determines whether item is shown when screen size is xs
+- label: Blog
+  link: /blog/
+  xs: true
 
 - label: Docs
   link: https://github.com/jaagr/polybar/wiki
