@@ -134,3 +134,8 @@ td {
 .table-hover tbody tr:hover code {
   background: #fdfdfd;
 }
+
+/* Prevents overflow of pre elements when container is flex */
+.container.d-flex .row {
+  min-width: 0;
+}
