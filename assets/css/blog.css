@@ -90,6 +90,10 @@
   border-bottom: unset;
 }
 
+.blog .post :last-child {
+  margin-bottom: unset;
+}
+
 .blog .post + .latest ul {
   list-style-type: square;
   list-style-position: inside;
