@@ -5,26 +5,26 @@ source: https://github.com/polybar/polybar.github.io
 
 left:
   - label: GitHub
-    link: https://github.com/jaagr/polybar
+    link: https://github.com/polybar/polybar
 
   - label: License
-    link: https://github.com/jaagr/polybar/blob/master/LICENSE
+    link: https://github.com/polybar/polybar/blob/master/LICENSE
 
   - label: Releases
-    link: https://github.com/jaagr/polybar/releases
+    link: https://github.com/polybar/polybar/releases
 
   - label: Contributors
-    link: https://github.com/jaagr/polybar/contributors
+    link: https://github.com/polybar/polybar/contributors
 
 right:
   - label: Docs
-    link: https://github.com/jaagr/polybar/wiki
+    link: https://github.com/polybar/polybar/wiki
 
   - label: Issues
-    link: https://github.com/jaagr/polybar/issues
+    link: https://github.com/polybar/polybar/issues
 
   - label: Support
-    link: https://github.com/jaagr/polybar/blob/master/SUPPORT.md
+    link: https://github.com/polybar/polybar/blob/master/SUPPORT.md
 
   - label: Known Issues
-    link: https://github.com/jaagr/polybar/wiki/Known-Issues
+    link: https://github.com/polybar/polybar/wiki/Known-Issues
