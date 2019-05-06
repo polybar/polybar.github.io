@@ -4,7 +4,7 @@
   xs: true
 
 - label: Docs
-  link: https://github.com/jaagr/polybar/wiki
+  link: https://github.com/polybar/polybar/wiki
 
 - label: GitHub
-  link: https://github.com/jaagr/polybar
+  link: https://github.com/polybar/polybar
