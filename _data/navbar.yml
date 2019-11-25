@@ -3,6 +3,10 @@
   link: /blog/
   xs: true
 
+- label: Gitter
+  link: https://gitter.im/polybar/polybar
+  xs: true
+
 - label: Docs
   link: https://github.com/polybar/polybar/wiki
 
