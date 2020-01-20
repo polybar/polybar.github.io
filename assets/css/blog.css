@@ -94,13 +94,13 @@
   margin-bottom: unset;
 }
 
-.blog .post + .latest ul {
+.blog .latest ul {
   list-style-type: square;
   list-style-position: inside;
   padding-left: 1rem;
 }
 
-.blog .post + .latest a {
+.blog .latest a {
   font-weight: 500;
   color: inherit;
 
@@ -109,6 +109,6 @@
   transition: .2s background;
 }
 
-.blog .post + .latest a:hover {
+.blog .latest a:hover {
   background: #f2f2f2;
 }

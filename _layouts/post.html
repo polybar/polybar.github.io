@@ -21,9 +21,22 @@ layout: default
 <main class="blog d-flex flex-column">
   <div class="container d-flex flex-grow-1">
     <div class="row flex-grow-1">
-      <article class="post col-lg-9 mx-auto py-5">
+      <article class="post col-lg-9 mx-auto pt-5">
         {{ content }}
       </article>
+
+      <section class="col-lg-9 mx-auto py-5">
+          <h2 id="comments">Comments</h2>
+          <script src="https://utteranc.es/client.js"
+                  repo="polybar/polybar.github.io"
+                  issue-term="pathname"
+                  label="comments"
+                  theme="github-light"
+                  crossorigin="anonymous"
+                  async>
+          </script>
+      </section>
+
       {% if site.posts.size > 1 %}
         <div class="latest col-md-11 border-top mx-auto mt-auto py-4">
           <h3 class="mb-3">Latest Posts</h3>
