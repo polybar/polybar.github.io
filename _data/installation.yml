@@ -38,3 +38,6 @@
 
 - distro: Source Mage GNU/Linux
   instructions: polybar spell is available in the `test` grimoire and can be installed via `cast polybar`
+
+- distro: GNU Guix
+  instructions: can be installed using `guix install polybar`
