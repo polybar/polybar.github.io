@@ -94,6 +94,14 @@
   margin-bottom: unset;
 }
 
+.blog .post h2:not(:first-child),
+.blog .post h3:not(:first-child),
+.blog .post h4:not(:first-child),
+.blog .post h5:not(:first-child),
+.blog .post h6:not(:first-child) {
+  margin-top: 2.5rem;
+}
+
 .blog .latest ul {
   list-style-type: square;
   list-style-position: inside;
