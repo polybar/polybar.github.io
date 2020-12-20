@@ -36,8 +36,8 @@
     both release and git-master versions are available
     in the [main](https://packages.gentoo.org/packages/x11-misc/polybar) repository
 
-- distro: Source Mage GNU/Linux
-  instructions: polybar spell is available in the `test` grimoire and can be installed via `cast polybar`
-
 - distro: GNU Guix
   instructions: can be installed using `guix install polybar`
+
+- distro: Source Mage GNU/Linux
+  instructions: polybar spell is available in the `test` grimoire and can be installed via `cast polybar`
