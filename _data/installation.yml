@@ -1,3 +1,14 @@
+- distro: Debian
+  instructions: >
+    can be installed using `sudo apt install polybar`.
+    Newer releases of polybar are sometimes provided in the [backports](https://wiki.debian.org/Backports)
+    repository for stable users, you need to enable [backports](https://wiki.debian.org/Backports) and then
+    install using `sudo apt -t buster-backports install polybar`.
+
+- distro: Ubuntu
+  instructions: >
+    can be installed using `sudo apt install polybar` on 20.10 (Groovy Gorilla) or later.
+
 - distro: Arch Linux
   instructions: >
     you can install the AUR package [polybar-git](https://aur.archlinux.org/packages/polybar-git/)
