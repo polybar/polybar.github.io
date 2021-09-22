@@ -1,40 +1,15 @@
-- distro: Debian
-  instructions: >
-    can be installed using `sudo apt install polybar`.
-    Newer releases of polybar are sometimes provided in the [backports](https://wiki.debian.org/Backports)
-    repository for stable users, you need to enable [backports](https://wiki.debian.org/Backports) and then
-    install using `sudo apt -t buster-backports install polybar`.
-
-- distro: Ubuntu
-  instructions: >
-    can be installed using `sudo apt install polybar` on 20.10 (Groovy Gorilla) or later.
-
 - distro: Arch Linux
   instructions: >
     you can install the AUR package [polybar-git](https://aur.archlinux.org/packages/polybar-git/)
     to get the latest version, or [polybar](https://aur.archlinux.org/packages/polybar/) for the latest
     stable release
 
-- distro: Void Linux
+- distro: Debian
   instructions: >
-    can be installed using
-    <code>
-      xbps-install -S
-      <a href="https://github.com/void-linux/void-packages/blob/master/srcpkgs/polybar/template">polybar</a>
-    </code>
-
-- distro: NixOS
-  instructions: >
-    available in both the stable and unstable channels and can be installed with the command
-    `nix-env -iA nixos.polybar`
-
-- distro: Slackware
-  instructions: available in the [SlackBuilds](https://slackbuilds.org/repository/14.2/desktop/polybar/) repository
-
-- distro: openSUSE
-  instructions: >
-    available in [OBS](https://build.opensuse.org/package/show/home:sysek/polybar)
-    repository, package is available both for openSUSE Leap 15 and Tumbleweed
+    can be installed using `sudo apt install polybar`.
+    Newer releases of polybar are sometimes provided in the [backports](https://wiki.debian.org/Backports)
+    repository for stable users, you need to enable [backports](https://wiki.debian.org/Backports) and then
+    install using `sudo apt -t buster-backports install polybar`.
 
 - distro: FreeBSD
   instructions: >
@@ -50,5 +25,30 @@
 - distro: GNU Guix
   instructions: can be installed using `guix install polybar`
 
+- distro: NixOS
+  instructions: >
+    available in both the stable and unstable channels and can be installed with the command
+    `nix-env -iA nixos.polybar`
+
+- distro: openSUSE
+  instructions: >
+    available in [OBS](https://build.opensuse.org/package/show/home:sysek/polybar)
+    repository, package is available both for openSUSE Leap 15 and Tumbleweed
+
+- distro: Slackware
+  instructions: available in the [SlackBuilds](https://slackbuilds.org/repository/14.2/desktop/polybar/) repository
+
 - distro: Source Mage GNU/Linux
   instructions: polybar spell is available in the `test` grimoire and can be installed via `cast polybar`
+
+- distro: Ubuntu
+  instructions: >
+    can be installed using `sudo apt install polybar` on 20.10 (Groovy Gorilla) or later.
+
+- distro: Void Linux
+  instructions: >
+    can be installed using
+    <code>
+      xbps-install -S
+      <a href="https://github.com/void-linux/void-packages/blob/master/srcpkgs/polybar/template">polybar</a>
+    </code>
