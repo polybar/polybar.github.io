@@ -15,6 +15,11 @@
     to get the latest version, or [polybar](https://aur.archlinux.org/packages/polybar/) for the latest
     stable release
 
+- distro: Fedora
+  instructions: >
+    you can install [polybar](https://src.fedoraproject.org/rpms/polybar) using
+    `sudo dnf install polybar`
+    
 - distro: Void Linux
   instructions: >
     can be installed using
