@@ -1,0 +1,7 @@
+table#installation th {
+    text-align: end;
+}
+
+table#installation td {
+    text-align: start;
+}
