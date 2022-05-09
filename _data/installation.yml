@@ -11,14 +11,11 @@
 
 - distro: Arch Linux
   instructions: >
-    you can install the AUR package [polybar-git](https://aur.archlinux.org/packages/polybar-git/)
-    to get the latest version, or [polybar](https://aur.archlinux.org/packages/polybar/) for the latest
-    stable release
-
-- distro: Manjaro
-  instructions: >
-    you can install [polybar](https://software.manjaro.org/package/polybar) to get the latest stable 
-    release using `sudo pacman -S polybar`
+    can be installed using
+    <code>pacman -S <a href="https://archlinux.org/packages/community/x86_64/polybar/">polybar</a></code>
+    or you can install the
+    [polybar-git](https://aur.archlinux.org/packages/polybar-git/) package from
+    the AUR to get the latest unstable changes.
 
 - distro: Fedora
   instructions: >
