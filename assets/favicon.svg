@@ -1,0 +1,16 @@
+<svg version="1.1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css">
+        .fg {
+            fill: #272727;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .fg {
+                fill: white;
+            }
+        }
+    </style>
+    <path class="fg" d="M0 1L1 1L1 2L15 2L15 1L16 1L16 0L0 0L0 1Z" fill="#272727" fill-rule="nonzero" opacity="1" stroke="none"/>
+    <path class="fg" d="M4 3L4 14L1 14L1 15L0 15L0 16L16 16L16 15L15 15L15 14L6 14L6 11L11 11L11 10L12 10L12 4L11 4L11 3L4 3ZM6 5L10 5L10 9L6 9L6 5Z"
+          fill="#272727" fill-rule="nonzero" opacity="1" stroke="none"/>
+</svg>
